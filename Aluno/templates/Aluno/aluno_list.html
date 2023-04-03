@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lista de alunos</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1>Lista de alunos</h1>
+    <ul>
+      {%for aluno in object_list%}
+      <li>{{aluno.nome}} - <a href="{% url 'Aluno:update' pk=aluno.id %}">editar</a>
+        <a href="{% url 'Aluno:detail' pk=aluno.id %}">visualizar</a>
+        <a href="{% url 'Aluno:delete' pk=aluno.id %}">deletar</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

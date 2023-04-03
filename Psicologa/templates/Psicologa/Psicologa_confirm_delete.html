@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>deletar psicologa</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1>Deletar Psicologa</h1><br>
+    <p>tem certeza que deseja apagar a psicologa:</p>
+     
+    matricula: {{psicologa.SUAP}}
+    <br>
+    nome: {{psicologa.nome}}
+    <br>
+ <form action="." method="POST">
+    {%csrf_token%}
+    <input type="submit" value="Deletar psicologa">
+    <input type="reset" onclick="location.href='{% url 'Psicologa:list'%}'"value="não quero deletar a Psicologa">
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lista de alunos</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1>Aluno</h1><br>
+    
+ matricula: {{aluno.matricula}}
+ <br>
+ nome: {{aluno.nome}}
+ <br>
+ data de nascimento: {{aluno.datadenascimento}}
+ <br>
+ email: {{aluno.email}}
+ <br>
+ <input type="submit" onclick="location.href='{% url 'Aluno:list'%}'"value="voltar">
+  </body>
+</html>

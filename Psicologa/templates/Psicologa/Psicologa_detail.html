@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Psicologa</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1>Psicologa</h1><br>
+    
+ matricula: {{psicologa.SUAP}}
+ <br>
+ nome: {{psicologa.nome}}
+ <br>
+ <input type="submit" onclick="location.href='{% url 'Psicologa:list'%}'"value="voltar">
+  </body>
+</html>

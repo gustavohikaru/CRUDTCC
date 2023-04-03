@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lista de alunos</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1>Deletar Aluno</h1><br>
+    <p>tem certeza que deseja apagar o aluno:</p>
+ matricula: {{aluno.matricula}}
+ <br>
+ nome: {{aluno.nome}}
+ <br>
+ data de nascimento: {{aluno.datadenascimento}}
+ <br>
+ email: {{aluno.email}}
+ <br>
+ <form action="." method="POST">
+    {%csrf_token%}
+    <input type="submit" value="Deletar Aluno">
+    <input type="reset" onclick="location.href='{% url 'Aluno:list'%}'"value="não quero deletar o aluno">
+  </body>
+</html>
