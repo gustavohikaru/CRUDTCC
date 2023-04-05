@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'Aluno',
     'Psicologa',
     'Atendimento',
+    'Indicacao',
+   
 ]
 
 MIDDLEWARE = [
