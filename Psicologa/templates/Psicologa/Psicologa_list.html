@@ -11,9 +11,9 @@
     <h1>Lista de Psicologos</h1>
     <ul>
       {%for psicologa in object_list%}
-      <li>{{psicologa.nome}} - <a href="{% url 'Psicologa:update' pk=psicologa.id %}">editar</a>
-        <a href="{% url 'Psicologa:detail' pk=psicologa.id %}">visualizar</a>
-        <a href="{% url 'Psicologa:delete' pk=psicologa.id %}">deletar</a>
+      <li>{{psicologa.nome}} - <a href="{% url 'Psicologa:update' pk=psicologa.SUAP %}">editar</a>
+        <a href="{% url 'Psicologa:detail' pk=psicologa.SUAP %}">visualizar</a>
+        <a href="{% url 'Psicologa:delete' pk=psicologa.SUAP %}">deletar</a>
       </li>
       {% endfor %}
     </ul>
